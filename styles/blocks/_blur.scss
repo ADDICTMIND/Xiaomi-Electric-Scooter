@@ -1,0 +1,52 @@
+body {
+    overflow-x: hidden;
+}
+
+.bike-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.blur1 {
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    flex-shrink: 0;
+    opacity: 0.5;
+    background: #fc1f1f;
+    filter: blur(140px);
+    z-index: -3;
+}
+
+.blur2 {
+    position: absolute;
+    top: -60%;
+    left: 80%;
+    width: 500px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    flex-shrink: 0;
+    opacity: 0.5;
+    background: #fc501f;
+    filter: blur(140px);
+    z-index: -3;
+}
+
+.blur3 {
+    position: absolute;
+    top: -20%;
+    left: 70%;
+    width: 400px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    flex-shrink: 0;
+    opacity: 0.5;
+    background: #FC7C1F;
+    filter: blur(140px);
+    z-index: -3;
+}

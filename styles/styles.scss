@@ -7,8 +7,11 @@
     'utils',
     'globals';
 
-@import 'blocks/button',
+@import 'blocks/blur',
+        'blocks/button',
         'blocks/burger-button',
+        'blocks/mobile-overlay',
         'blocks/cross-button',
         'blocks/_header',
-        'blocks/mobile-overlay';
+        'blocks/hero',
+        'blocks/bike-info';

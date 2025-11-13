@@ -2,22 +2,6 @@
     padding-top: 40px;
     position: relative;
 
-    &::after {
-        content: '';
-        position: absolute;
-        width: 860px;
-        aspect-ratio: 1;
-        top: 0;
-        left: 0;
-        translate: 100% -100%;
-        background-color: #FC501F;
-        z-index: -3;
-        flex-shrink: 0;
-        border-radius: 50%;
-        opacity: 0.5;
-        filter: blur(140px);
-    }
-
     &__inner {
         display: flex;
         justify-content: space-between;

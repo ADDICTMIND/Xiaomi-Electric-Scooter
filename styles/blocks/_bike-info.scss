@@ -1,0 +1,10 @@
+.bike-info {
+    padding-top: 140px;
+
+    &__list {
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 40px;
+    }
+}

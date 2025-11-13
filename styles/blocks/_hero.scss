@@ -1,0 +1,29 @@
+.hero {
+    padding-top: 140px;
+    position: relative;
+
+    &__subtitle {
+        padding-block: 43px 68px;
+        color: var(--color-accent);
+    }
+
+    &__button {
+        display: inline-block;
+        border: 1px solid var(--color-light);
+        border-radius: 65px;
+
+        &-select-white {
+            @include hover {
+                background-color: var(--color-light);
+                color: var(--color-accent);
+            }
+        }
+
+        &-select-black {
+            @include hover {
+                background-color: transparent;
+                color: var(--color-accent);
+            }
+        }
+    }
+}
