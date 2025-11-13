@@ -4,6 +4,7 @@
     margin: 0;
     border: none;
     background-color: #222222;
+    padding: 40px 20px;
 
     &:modal {
         max-width: 100%;
@@ -26,7 +27,7 @@
 
         flex-direction: column;
         row-gap: 30px;
-        padding-block: 10% 30px;
+        padding-block: 70px 30px;
         list-style: none;
     }
 

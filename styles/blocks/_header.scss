@@ -1,11 +1,36 @@
 .header {
     padding-top: 40px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 860px;
+        aspect-ratio: 1;
+        top: 0;
+        left: 0;
+        translate: 100% -100%;
+        background-color: #FC501F;
+        z-index: -3;
+        flex-shrink: 0;
+        border-radius: 50%;
+        opacity: 0.5;
+        filter: blur(140px);
+    }
 
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
         column-gap: 80px;
+
+        @include tablet {
+            column-gap: 40px;
+        }
+    }
+
+    &__logo-image {
+        flex-shrink: 0;
     }
 
     &__menu {
@@ -43,7 +68,11 @@
         }
     }
 
-    &__logo-image {
-        flex-shrink: 0;
+    &__button {
+        @include tablet {
+            padding-inline: 25px;
+            font-size: 14px;
+            height: 45px;
+        }
     }
 }
