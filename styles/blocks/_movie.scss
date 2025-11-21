@@ -1,0 +1,46 @@
+.movie {
+    position: relative;
+    max-width: 1440px;
+    height: 600px;
+    width: 100%;
+    background-image: url(../../images/movie/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: 60%;
+        width: 800px;
+        aspect-ratio: 1;
+        opacity: 0.3;
+        border-radius: 50%;
+        background-color: #fc1f1f;
+        filter: blur(140px);
+        z-index: -1;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    &__logo {
+        padding-top: 120px;
+    }
+
+    &__title {
+        padding-top: 150px;
+        font-weight: 500;
+        line-height: 1.1;
+    }
+
+    &__description {
+        padding-top: 40px;
+        font-size: 14px;
+    }
+}

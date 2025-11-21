@@ -2,14 +2,46 @@
     padding-top: 140px;
     position: relative;
 
+    @include mobile {
+        padding-top: 80px;
+    }
+
+    &__inner {
+        @include mobile-s {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+
+    &__title {
+        @include mobile {
+            color: var(--color-accent)
+        }
+
+        @include mobile-s {
+            font-size: 30px;
+        }
+    }
+
     &__subtitle {
         padding-block: 43px 68px;
         color: var(--color-accent);
+        
+        @include mobile {
+            color: var(--color-light);
+            font-size: 20px;
+            padding-block: 24px 36px;
+        }
+
+        @include mobile-s {
+            font-size: 20px;
+        }
     }
 
     &__button {
         display: inline-block;
-        border: 1px solid var(--color-light);
+        border: 3px solid var(--color-light);
         border-radius: 65px;
 
         &-select-white {
@@ -17,12 +49,22 @@
                 background-color: var(--color-light);
                 color: var(--color-accent);
             }
+
+            @include mobile-s {
+                padding-inline: 25px;
+                font-size: 14px;
+            }
         }
 
         &-select-black {
             @include hover {
                 background-color: transparent;
                 color: var(--color-accent);
+            }
+
+            @include mobile-s {
+                padding-inline: 25px;
+                font-size: 14px;
             }
         }
     }
